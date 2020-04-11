@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
 import { ListComponent } from "./list/list.component";
 
 const routes: Routes = [
+  { path: "", component: ListComponent },
   { path: "astronauts", component: AstronautsComponent },
   { path: "iss", component: IssComponent },
   { path: "**", component: PageNotFoundComponent },

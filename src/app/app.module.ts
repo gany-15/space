@@ -10,14 +10,16 @@ import { AllApiService } from './all-api.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoadingScreenComponent } from './loading-screen/loading-screen.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     RouteComponents,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoadingScreenComponent
   ],
   imports: [
     BrowserModule,
