@@ -6,7 +6,7 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
 import { ListComponent } from "./list/list.component";
 
 const routes: Routes = [
-  { path: "", component: ListComponent },
+  { path: "", redirectTo: "", pathMatch: "full" },
   { path: "astronauts", component: AstronautsComponent },
   { path: "iss", component: IssComponent },
   { path: "**", component: PageNotFoundComponent },
@@ -18,4 +18,9 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 
-export const RouteComponents = [AstronautsComponent, IssComponent];
+export const RouteComponents = [
+  AstronautsComponent,
+  IssComponent,
+  ListComponent,
+  PageNotFoundComponent,
+];

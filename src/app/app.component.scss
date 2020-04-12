@@ -3,3 +3,34 @@ body {
   color: blanchedalmond;
   text-align: center;
 }
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 100px;
+  font-weight: lighter;
+  margin: 0px;
+  padding: 50px;
+  animation-name: appear;
+  animation-duration: 3s;
+}
+
+.tab-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  a {
+    margin: 40px;
+    background-color: #ff1493;
+    color: blanchedalmond;
+  }
+}

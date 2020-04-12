@@ -1,3 +1,18 @@
 <body>
-  <app-list></app-list>
+  <h1>WELCOME TO SPACE</h1>
+  <div class="tab-display">
+    <a mat-raised-button routerLink="/astronauts">
+        Astronauts Currently In Space
+    </a>
+    <a mat-raised-button routerLink="/iss">
+        ISS Position
+    </a>
+  </div>
+  <div *ngIf="isLoading; else showContent">
+      <app-loading-screen></app-loading-screen>
+  </div>
+  <ng-template #showContent>
+      <router-outlet></router-outlet>
+  </ng-template>
+
 </body>
