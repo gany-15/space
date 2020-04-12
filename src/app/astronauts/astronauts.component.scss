@@ -1,0 +1,27 @@
+table {
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  left: 35%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  th {
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 2px solid blanchedalmond;
+    color: blanchedalmond;
+  }
+  td {
+    margin-top: 5px;
+    font-size: medium;
+    font-weight: lighter;
+    color: blanchedalmond;
+  }
+}
+
+.table-header {
+  padding-bottom: 2px;
+}
+
+.table-body {
+  padding-top: 5px;
+}

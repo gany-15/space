@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { AllApiService } from "../all-api.service";
-import { Router, NavigationStart, NavigationEnd, Event } from "@angular/router";
+// import { Router, NavigationStart, NavigationEnd, Event } from "@angular/router";
 
 @Component({
   selector: "app-astronauts",

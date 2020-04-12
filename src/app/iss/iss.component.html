@@ -1,1 +1,11 @@
-<p>iss works!</p>
+<div *ngIf="isLoading; else showContent">
+    <app-loading-screen></app-loading-screen>
+</div>
+<ng-template #showContent>
+    <div>The ISS is currently located at:-
+        <p>Latitude: <span>{{latitude}}</span></p>
+        <p>Longitude: <span>{{longitude}}</span></p>
+        <p>Updated At <span>{{timestamp.toUTCString()}}</span></p>
+    </div>
+    <button mat-button class="refresh" (click)="updateIssPosition()">Update</button>
+</ng-template>

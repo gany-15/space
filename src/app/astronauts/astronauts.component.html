@@ -3,9 +3,14 @@
 </div>
 <ng-template #showContent>
     <p>There are {{total}} people in space</p>
-    <table mat-table></table>
-    <div *ngFor="let astronaut of astronauts">
-        <span>{{astronaut.name}}</span>
-        <span>{{astronaut.craft}}</span>
-    </div>
+    <table>
+        <tr class="table-header">
+            <th>Name</th>
+            <th>Craft</th>
+        </tr>
+        <tr *ngFor="let astronaut of astronauts" class="table-body">
+            <td>{{astronaut.name}}</td>
+            <td>{{astronaut.craft}}</td>
+        </tr>
+    </table>
 </ng-template>
