@@ -1,0 +1,5 @@
+export const AppConstants = {
+  SHOW_LOADER: "SHOW_LOADER",
+  SET_ASTRONAUTS: "SET_ASTRONAUTS",
+  SET_ISS_POS: "SET_ISS_POS",
+};
